@@ -9,6 +9,8 @@ function ClickablePicture() {
         setshowMascara(!showMascara);
     };
 
+
+
     return (
         <img 
             src={showMascara ? mascara : harold} 
@@ -17,6 +19,17 @@ function ClickablePicture() {
             style={{ cursor: "pointer" }}
         />
     );
+
+    /* o lo que es lo mismo...
+    
+    let imageToShow;
+    if (showMascara) {
+        imageToShow = mascara;
+    } else {
+        imageToShow = harold;
+    }
+        
+    */
 }
 
 export default ClickablePicture;
